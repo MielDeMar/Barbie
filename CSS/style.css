@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+* {margin: 0; padding: 0;}
+
+body {background-image: url("../IMG/FONSO.jpg"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; cursor: url("../IMG/flecha.png"), auto;}
+
+.wrapper {background-color: rgba(255,255,255,0.66); width: 1000px; margin-right: auto; margin-left: auto; text-align: center; padding: 30px; box-sizing: border-box; }
+
+
+.footer {background-color: white; width: 1000px; height: 50px; color: #FF008E; line-height: 50px; margin-right: auto; margin-left: auto; text-align: center; }
+
+.nav {background-color: white; width: 1000px; height: 200px; color: #FF008E; text-align: center; margin-right: auto; margin-left: auto; }
+
+.nav ul{list-style-type: none;}
+
+.nav li {width: 200px; float: left; font-family: Dancing Script }
+
+.section {background-color: white; width: 700px; padding: 70px;margin: 50px auto; }
+
+/* acortar codigo (margin-top: 50px; margin-bottom: 50px; margin-right: auto; margin-left: auto;)*/
+
+.section p {text-align: justify;}
+h2 {color:  #FF008E; font-family: barbie;}
+
+
+@font-face {src:url("../SRC/Bontex.ttf"); font-family: barbie;}
+/*font-face permite colocar fuentes de fantasia descargadas y font-family es para darle nombre*/
+
+a {text-decoration: none; color: #FF008E; }
+a:hover {color: #71CDF4}
+
+
+.boton {position: fixed; right: 60px; top: 200px; }
+
+
+
+/* posicion relativa sigue le flujo de la pagina, la que se da por defaul, y apartir de ahí se mueva */
+/* posiscion fija: se queda en el lugar en donde se pociciona, apesar del movimiento de la paguina, no se ve afectada por el scrol */
+/* posicion ambsoluta: sale del flujo de la paguina, igno al elemento padre, no se queda fija, se ve afectada por el scrol */
+
+.uno {position: absolute; left: 200px; bottom: 120px}
+.section img {height: 250px; width: auto}
+
+.dos {position: absolute; left: 1000px; bottom: -220px}
+
+.tres {position: absolute; left: 100px; bottom: -500px}
+.cuatro {position: absolute; left: 1000px; bottom: -800px}
+.cinco {position: absolute; left: 50px; bottom: -1150px}
+/*TRANSFORMACIONES*/
+
+.uno:hover {transform: translate(100px, 50px); transition: ease-in-out 5s; }
+.dos:hover {transform: skewX(180deg); transition: ease-in 5s;}
+.tres:hover {transform: translate(-100px, -50px); transition: ease-out 5s;}
+.cuatro:hover {transform: scale(0.10) rotate(360deg); transition: 5s;}
+.cinco:hover {transform: skewY(180deg) scale(0.30); transition: ease-in 5s;}
+
+/* transición linear no tiene flexibilización, es constante, ease-in: inicia la transformación lentamente y termina a toda velocidad, ease-out: inicia la transformacion a toda velocidad y termina lentamnete, ease-in-out: lento-rapido-lento. Las tranformaciones de rotate y skew se maneja en grados (deg) y traslate en pixeles (px)  */
+
+
+
+
+
+
+
